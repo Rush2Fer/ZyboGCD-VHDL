@@ -1,0 +1,4 @@
+v 4
+file . "../regn.vhd" "4efa3a453e5f4d3ba77ebc74060e3ade468b4c07" "20240108150611.294":
+  entity regn at 3( 91) + 0 on 15;
+  architecture rtl of regn at 23( 396) + 0 on 16;

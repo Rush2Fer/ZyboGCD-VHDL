@@ -1,0 +1,60 @@
+$date
+  Tue Jan 16 08:13:55 2024
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 2 ! x_s[1:0] $end
+$var reg 2 " y_s[1:0] $end
+$var reg 1 # xeqy_s $end
+$var reg 1 $ xgty_s $end
+$scope module dut $end
+$var reg 2 % x[1:0] $end
+$var reg 2 & y[1:0] $end
+$var reg 1 ' xeqy $end
+$var reg 1 ( xgty $end
+$upscope $end
+$enddefinitions $end
+#0
+b00 !
+b00 "
+1#
+0$
+b00 %
+b00 &
+1'
+0(
+#5000000
+b01 !
+0#
+1$
+b01 %
+0'
+1(
+#8000000
+b01 "
+1#
+0$
+b01 &
+1'
+0(
+#10000000
+b10 !
+0#
+1$
+b10 %
+0'
+1(
+#15000000
+b11 "
+0$
+b11 &
+0(
+#25000000
+b00 "
+1$
+b00 &
+1(

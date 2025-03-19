@@ -1,0 +1,10 @@
+v 4
+file . "../reset_synchronizer_top.vhd" "e4e40d612e528dd1bb0fdb640d403d8d58e28afc" "20231215151348.432":
+  entity reset_synchronizer_top at 1( 0) + 0 on 15;
+  architecture rtl of reset_synchronizer_top at 18( 220) + 0 on 16;
+file . "../reg.vhd" "ebade3c17b6b08734701ce3e45de6a61326bfd68" "20231215151348.410":
+  entity reg at 3( 84) + 0 on 11;
+  architecture struct of reg at 19( 298) + 0 on 12;
+file . "../reset_synchronizer.vhd" "85b9658a871e14568924beec01718a38d84ec217" "20231215151348.422":
+  entity reset_synchronizer at 1( 0) + 0 on 13;
+  architecture rtl of reset_synchronizer at 19( 275) + 0 on 14;

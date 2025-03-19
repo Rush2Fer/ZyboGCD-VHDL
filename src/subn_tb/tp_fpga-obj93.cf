@@ -1,0 +1,7 @@
+v 4
+file . "../subn.vhd" "82a93903938cbaf8627309a983ab0f125197ece9" "20240108162308.218":
+  entity subn at 3( 77) + 0 on 27;
+  architecture rtl of subn at 23( 390) + 0 on 28;
+file . "../sub.vhd" "e79003830f8206782b4d3fddcb77466f0e7be7cc" "20240108162308.203":
+  entity sub at 3( 77) + 0 on 25;
+  architecture rtl of sub at 20( 313) + 0 on 26;

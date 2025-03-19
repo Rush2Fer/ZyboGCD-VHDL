@@ -1,0 +1,4 @@
+v 4
+file . "signal_synchronizer_tb.vhd" "469fccbd76cf1f316fa3442ae781d0b5fb996b6c" "20231215161051.948":
+  entity signal_synchronizer_tb at 1( 0) + 0 on 11;
+  architecture test of signal_synchronizer_tb at 11( 167) + 0 on 12;

@@ -1,0 +1,4 @@
+v 4
+file . "../muxn.vhd" "cb7dcf3d315b7e889604cb60dd7cf28280a1df7d" "20240108144735.570":
+  entity muxn at 3( 68) + 0 on 25;
+  architecture rtl of muxn at 23( 386) + 0 on 26;

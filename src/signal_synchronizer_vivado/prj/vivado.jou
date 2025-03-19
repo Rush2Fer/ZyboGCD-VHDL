@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jan  8 13:36:02 2024
+# Process ID: 23526
+# Current directory: /tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj
+# Command line: vivado
+# Log file: /tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj/vivado.log
+# Journal file: /tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project signal_synchronizer . -part xc7z010clg400-1
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse {/tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_top.vhd /tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_tb/signal_synchronizer_tb.vhd /tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer.vhd}
+add_files -fileset constrs_1 -norecurse {/tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/xdc/physical.xdc /tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/xdc/timing.xdc}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_project
+open_project /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/project_1.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project /tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj/signal_synchronizer.xpr
+update_compile_order -fileset sources_1
+remove_files  /tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_tb/signal_synchronizer_tb.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+open_run synth_1 -name synth_1
+check_timing -verbose -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj/signal_synchronizer.runs/impl_1/signal_synchronizer_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj/signal_synchronizer.runs/impl_1/signal_synchronizer_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_hw
+create_run synth_2 -flow {Vivado Synthesis 2017} -strategy {Vivado Synthesis Defaults}
+current_run [get_runs synth_2]
+set_property part xc7z020clg400-1 [current_project]
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+current_design synth_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj/signal_synchronizer.runs/impl_2/signal_synchronizer_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj/signal_synchronizer.runs/impl_2/signal_synchronizer_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj/signal_synchronizer.runs/impl_2/signal_synchronizer_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

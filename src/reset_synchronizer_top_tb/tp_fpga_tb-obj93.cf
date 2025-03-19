@@ -1,0 +1,4 @@
+v 4
+file . "reset_synchronizer_top_tb.vhd" "8213f46ac6cc372dd11dde5038cf410c622f4a1d" "20231215151348.445":
+  entity reset_synchronizer_top_tb at 1( 0) + 0 on 11;
+  architecture test of reset_synchronizer_top_tb at 12( 149) + 0 on 12;

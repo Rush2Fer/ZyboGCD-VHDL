@@ -1,0 +1,4 @@
+v 4
+file . "../compn.vhd" "27704d151603aaae9e5054e22ca1baa47cb854e6" "20240116071353.415":
+  entity compn at 3( 68) + 0 on 17;
+  architecture rtl of compn at 23( 362) + 0 on 18;

@@ -1,0 +1,7 @@
+v 4
+file . "sub_tb.vhd" "e5700da728a3b66e8672a3616fd811e75d0aa236" "20240108154555.517":
+  entity sub_tb at 1( 0) + 0 on 13;
+  architecture test of sub_tb at 12( 111) + 0 on 14;
+file . "../sub.vhd" "e79003830f8206782b4d3fddcb77466f0e7be7cc" "20240108154555.508":
+  entity sub at 3( 77) + 0 on 11;
+  architecture rtl of sub at 20( 313) + 0 on 12;

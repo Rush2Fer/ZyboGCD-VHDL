@@ -1,0 +1,4 @@
+v 4
+file . "regn_tb.vhd" "28b5e82f5dbc0a3becaa01596ddb88b242bab2fa" "20240108150611.308":
+  entity regn_tb at 1( 0) + 0 on 11;
+  architecture test of regn_tb at 12( 113) + 0 on 12;

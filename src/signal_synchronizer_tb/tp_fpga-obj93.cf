@@ -1,0 +1,4 @@
+v 4
+file . "../signal_synchronizer.vhd" "7988ac726d91726a63028f9ca0d2166d8d3f228a" "20231215161051.937":
+  entity signal_synchronizer at 1( 0) + 0 on 11;
+  architecture behavioral of signal_synchronizer at 17( 345) + 0 on 12;

@@ -1,0 +1,4 @@
+v 4
+file . "compn_tb.vhd" "6a604c225cc8d1cf0d692fab8c96b50b8778bd99" "20240116071353.455":
+  entity compn_tb at 1( 0) + 0 on 15;
+  architecture test of compn_tb at 12( 115) + 0 on 16;

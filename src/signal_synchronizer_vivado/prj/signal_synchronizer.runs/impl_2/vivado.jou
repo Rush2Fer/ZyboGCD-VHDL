@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jan  8 14:30:01 2024
+# Process ID: 680
+# Current directory: /tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj/signal_synchronizer.runs/impl_2
+# Command line: vivado -log signal_synchronizer_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source signal_synchronizer_top.tcl -notrace
+# Log file: /tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj/signal_synchronizer.runs/impl_2/signal_synchronizer_top.vdi
+# Journal file: /tp/xpiese5/xpiese5002/projet_fpga/signal_synchronizer_vivado/prj/signal_synchronizer.runs/impl_2/vivado.jou
+#-----------------------------------------------------------
+source signal_synchronizer_top.tcl -notrace

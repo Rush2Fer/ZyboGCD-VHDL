@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Dec 15 17:00:15 2023
+# Process ID: 2688
+# Current directory: /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj
+# Command line: vivado
+# Log file: /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/vivado.log
+# Journal file: /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/project_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/project_1.runs/impl_1/reset_synchronizer_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/project_1.runs/impl_1/reset_synchronizer_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_run synth_1 -name synth_1
+check_timing -verbose -name timing_1
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1

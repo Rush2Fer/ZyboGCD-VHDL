@@ -1,0 +1,261 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Dec 15 16:21:03 2023
+# Process ID: 26142
+# Current directory: /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj
+# Command line: vivado
+# Log file: /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/vivado.log
+# Journal file: /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 . -part xc7z020clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/softslin/vivado_17.1/Vivado/2017.1/data/ip'.
+set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse {/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer.vhd /tp/xpiese5/xpiese5002/projet_fpga/reg.vhd /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/src/reset_synchronizer_top.vhd}
+add_files -fileset constrs_1 -norecurse {/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/generated.xdc /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/physical.xdc /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Fri Dec 15 16:23:59 2023] Launched synth_1...
+Run output will be captured here: /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/project_1.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: reset_synchronizer_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 6286.539 ; gain = 13.992 ; free physical = 8954 ; free virtual = 36915
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1090] 'reset_synchronizer' is not compiled in library tp_fpga [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/src/reset_synchronizer_top.vhd:6]
+INFO: [Synth 8-638] synthesizing module 'reset_synchronizer_top' [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/src/reset_synchronizer_top.vhd:18]
+INFO: [Synth 8-3491] module 'reset_synchronizer' declared at '/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer.vhd:10' bound to instance 'reset1' of component 'reset_synchronizer' [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/src/reset_synchronizer_top.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'reset_synchronizer' [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer.vhd:19]
+INFO: [Synth 8-3491] module 'reg' declared at '/tp/xpiese5/xpiese5002/projet_fpga/reg.vhd:9' bound to instance 'R1' of component 'reg' [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer.vhd:39]
+INFO: [Synth 8-638] synthesizing module '\reg ' [/tp/xpiese5/xpiese5002/projet_fpga/reg.vhd:19]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (1#1) [/tp/xpiese5/xpiese5002/projet_fpga/reg.vhd:19]
+INFO: [Synth 8-3491] module 'reg' declared at '/tp/xpiese5/xpiese5002/projet_fpga/reg.vhd:9' bound to instance 'R2' of component 'reg' [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'reset_synchronizer' (2#1) [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'reset_synchronizer_top' (3#1) [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/src/reset_synchronizer_top.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 6317.805 ; gain = 45.258 ; free physical = 8973 ; free virtual = 36934
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 6317.805 ; gain = 45.258 ; free physical = 8973 ; free virtual = 36934
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/generated.xdc]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/generated.xdc]
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/physical.xdc]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/physical.xdc]
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc]
+WARNING: [Constraints 18-401] set_false_path: 'RST' is not a valid endpoint. [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc:8]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+CRITICAL WARNING: [Constraints 18-512] set_false_path: list of objects specified for '-to' option contains no valid endpoints. Please check to make sure at least one valid endpoint is specified. [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc:8]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 6728.016 ; gain = 455.469 ; free physical = 8628 ; free virtual = 36595
+13 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 6728.016 ; gain = 455.469 ; free physical = 8622 ; free virtual = 36594
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/generated.xdc]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/generated.xdc]
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/physical.xdc]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/physical.xdc]
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc]
+WARNING: [Constraints 18-401] set_false_path: 'RST' is not a valid endpoint. [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc:8]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+CRITICAL WARNING: [Constraints 18-512] set_false_path: list of objects specified for '-to' option contains no valid endpoints. Please check to make sure at least one valid endpoint is specified. [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc:8]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+remove_files  -fileset constrs_1 /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc
+add_files -fileset constrs_1 -norecurse /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Dec 15 16:28:04 2023] Launched synth_1...
+Run output will be captured here: /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Dec 15 16:29:19 2023] Launched impl_1...
+Run output will be captured here: /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/project_1.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/.Xil/Vivado-26142-cimeld106.cime.inpg.fr/dcp7/reset_synchronizer_top.xdc]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/.Xil/Vivado-26142-cimeld106.cime.inpg.fr/dcp7/reset_synchronizer_top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.13 . Memory (MB): peak = 7058.617 ; gain = 0.000 ; free physical = 8252 ; free virtual = 36274
+Restored from archive | CPU: 0.010000 secs | Memory: 0.015945 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.13 . Memory (MB): peak = 7058.617 ; gain = 0.000 ; free physical = 8252 ; free virtual = 36274
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 15 16:31:38 2023] Launched impl_1...
+Run output will be captured here: /tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.1
+  **** Build date : Apr 14 2017-19:01:52
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351AD6AFBA
+set_property PROGRAM.FILE {/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/project_1.runs/impl_1/reset_synchronizer_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351AD6AFBA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351AD6AFBA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/prj/project_1.runs/impl_1/reset_synchronizer_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: reset_synchronizer_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7171.043 ; gain = 0.000 ; free physical = 8035 ; free virtual = 36036
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1090] 'reset_synchronizer' is not compiled in library tp_fpga [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/src/reset_synchronizer_top.vhd:6]
+INFO: [Synth 8-638] synthesizing module 'reset_synchronizer_top' [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/src/reset_synchronizer_top.vhd:18]
+INFO: [Synth 8-3491] module 'reset_synchronizer' declared at '/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer.vhd:10' bound to instance 'reset1' of component 'reset_synchronizer' [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/src/reset_synchronizer_top.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'reset_synchronizer' [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer.vhd:19]
+INFO: [Synth 8-3491] module 'reg' declared at '/tp/xpiese5/xpiese5002/projet_fpga/reg.vhd:9' bound to instance 'R1' of component 'reg' [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer.vhd:39]
+INFO: [Synth 8-638] synthesizing module '\reg ' [/tp/xpiese5/xpiese5002/projet_fpga/reg.vhd:19]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (1#1) [/tp/xpiese5/xpiese5002/projet_fpga/reg.vhd:19]
+INFO: [Synth 8-3491] module 'reg' declared at '/tp/xpiese5/xpiese5002/projet_fpga/reg.vhd:9' bound to instance 'R2' of component 'reg' [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'reset_synchronizer' (2#1) [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'reset_synchronizer_top' (3#1) [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/src/reset_synchronizer_top.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7174.176 ; gain = 3.133 ; free physical = 8050 ; free virtual = 36051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7174.176 ; gain = 3.133 ; free physical = 8051 ; free virtual = 36052
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/generated.xdc]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/generated.xdc]
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/physical.xdc]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/physical.xdc]
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 7370.746 ; gain = 199.703 ; free physical = 7917 ; free virtual = 35935
+12 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/generated.xdc]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/generated.xdc]
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/physical.xdc]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/physical.xdc]
+Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc]
+Finished Parsing XDC File [/tp/xpiese5/xpiese5002/projet_fpga/reset_synchronizer_vivado/xdc/timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+current_design impl_1
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351AD6AFBA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351AD6AFBA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351AD6AFBA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351AD6AFBA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351AD6AFBA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351AD6AFBA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
