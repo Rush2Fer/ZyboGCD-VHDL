@@ -15,10 +15,10 @@ The design consists of multiple functional blocks, each responsible for a specif
 ![System Structure](img/structure.png)
 
 ### Before Calculation
-![Zybo Before Calculation](img/zybo-1.png)
+![Zybo Before Calculation](img/zybo-1.jpg)
 
 ### After Calculation
-![Zybo After Calculation](img/zybo-2.png)
+![Zybo After Calculation](img/zybo-2.jpg)
 
 ## Folder Structure
 
